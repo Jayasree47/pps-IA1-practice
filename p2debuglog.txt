@@ -1,0 +1,30 @@
+b main
+Breakpoint 1 at 0x7db: file p2original.c, line 25.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p2original.c:25
+25    x=input();
+(gdb) n
+enter the value
+56
+26    y=input();
+(gdb) n
+enter the value34
+27    z=input();
+(gdb) n
+enter the value67
+28    big=comp(x,y,z);
+(gdb) n
+29    output(big);
+(gdb) n
+30    return 0;
+(gdb) n
+31  }(gdb) n
+__libc_start_main (main=0x556e152007d3 <main>, argc=1, argv=0x7ffcb49a75d8, 
+    init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, 
+    stack_end=0x7ffcb49a75c8) at ../csu/libc-start.c:344
+344 ../csu/libc-start.c: No such file or directory.
+(gdb) n
+biggest number is 67
